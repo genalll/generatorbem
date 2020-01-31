@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Генератор классов БЭМ</title>
+</head>
+<body>
+    
+<header class="hed">
+    <nav class="hed__navigation">
+        <a class="hed__link" href="#">ГЕНЕРАТОР</a>
+        <a class="hed__link" href="https://ru.bem.info/methodology/quick-start/">О БЭМ</a>
+    </nav>
+    <h1 class="hed__title">Генератор имен БЭМ</h1>
+</header>
+<main class="generator">
+
+    <section class="generator__inputs">
+        <h2 class="generator__title">введите данные</h2>
+        <input id="block" type="text" class="generator__input" value="Имя блока">
+        <input id="element" type="text" class="generator__input" value="Имя элемента">
+        <input id="modifikator"type="text" class="generator__input" value="Имя модификатора">
+        <input id="modif" type="text" class="generator__input" value="Значение модификатора">
+        <button id="result" type="submit" class="generator__submit" >Создать</button>
+    </section>
+
+    <section class="generator__result">
+       
+       
+        <div class="generator__cod"> 
+          
+          <p class="generator__text"> 
+              &lt;div<span id="value_blick"></span>&gt; <i class="generator__i">&lt;!--БЛОК--&gt;</i>
+          </p>
+
+          <p class="generator__text"> 
+                &lt;div<span id="value_element"></span>&gt; &lt;/div&gt; <i class="generator__i">&lt;!--ЭЛЕМЕНТ И ЕГО МОДИФИКАТОР С ЗНАЧЕНИЕМ--&gt;</i>
+          </p>
+          <p class="generator__text"> 
+                &lt;/div&gt;
+          </p>   
+
+
+        </div>
+    
+    </section>
+
+
+</main>
+<footer class="footer"><a class="footer_link"href="https://github.com/genalll">2020  Gennadii Alikin</a></footer>
+</body>
+
+
+<script src="script.js"></script>
+</html>
